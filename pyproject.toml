@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fuzzy-membership"
+version = "0.1.0"
+description = "Fuzzy membership of spatial units in regions, derived from interaction networks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Jacob Kruse" }]
+keywords = ["fuzzy membership", "redistricting", "regionalization", "spatial networks", "spatial-social interactions"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = ["numpy>=1.22", "pandas>=1.4"]
+
+[project.optional-dependencies]
+examples = ["geopandas>=0.12", "matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/GeoDS/fuzzy-membership"
+Issues = "https://github.com/GeoDS/fuzzy-membership/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fuzzy_membership"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+extend-exclude = ["_source"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

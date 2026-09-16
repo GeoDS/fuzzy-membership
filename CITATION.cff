@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: fuzzy-membership
+abstract: >-
+  Fuzzy membership of spatial units in regions, derived from interaction
+  networks. Measures how strongly each spatial unit belongs to each region of a
+  plan, using the mobility flows and social ties that connect it to the units
+  around it.
+authors:
+  - family-names: Kruse
+    given-names: Jacob
+license: MIT
+repository-code: "https://github.com/GeoDS/fuzzy-membership"
+keywords:
+  - fuzzy membership
+  - redistricting
+  - regionalization
+  - spatial networks
+  - spatial-social interactions
+preferred-citation:
+  type: article
+  title: >-
+    Modeling region affiliation with fuzzy membership based on spatial and
+    social interactions
+  authors:
+    - family-names: Kruse
+      given-names: Jacob
+    - family-names: Gao
+      given-names: Song
+    - family-names: Mayer
+      given-names: Kenneth R.
+  journal: Annals of the American Association of Geographers
+  year: 2025
+  volume: 0
+  issue: 0
+  start: 1
+  end: 23
+  doi: 10.1080/24694452.2025.2551044
